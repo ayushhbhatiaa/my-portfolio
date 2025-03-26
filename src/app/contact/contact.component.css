@@ -1,0 +1,103 @@
+div h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  font-weight: 800;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+/* div span {
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  font-weight: 800;
+  font-style: normal;
+} */
+
+.connect {
+  color: rgb(125, 15, 228);
+}
+
+.para {
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.button {
+  margin-bottom : 30px;
+  border-radius: 26px;
+  background-color: rgb(125, 15, 228);
+  color: #ffff;
+  font-size: 19px;
+}
+
+.button:hover {
+  font-size: 20px;
+  color: rgb(125, 15, 228);
+  background-color: #ffff;
+  border: 1px solid rgb(125, 15, 228);
+}
+
+.info {
+  border: 1px solid rgb(125, 15, 228);
+  max-width: 18rem;
+  margin-top: -75px;
+  margin-left: 220px;
+  display: table;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.details {
+  background-color: rgb(186, 161, 209);
+  /* color: #ffff; */
+}
+
+.my-contact {
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.phone {
+  width: 100%;
+  max-width: 100%;
+  height: 70vh;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+
+.closing {
+  margin-bottom : 10px;
+  border-radius: 26px;
+  background-color: rgb(125, 15, 228);
+  color: #ffff;
+  font-size: 19px;
+}
+
+.closing :hover {
+  font-size: 20px;
+  color: rgb(125, 15, 228);
+  background-color: #ffff;
+  border: 1px solid rgb(125, 15, 228);
+}
+
+.connection {
+  font-family: "Poppins", sans-serif;
+  /* font-size: large; */
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+
+}
