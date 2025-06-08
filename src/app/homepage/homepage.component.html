@@ -1,138 +1,142 @@
-<div class="back">
-    <section class="firstSection">
-        <div class="left my-4 ml-4 mt-4 head">
-            <p class="welcome">WELCOME TO MY WORLD !!</p>
-            <div>
-                Hello folks! I am
-            </div>
-            <div class="purple">
-                Ayush Bhatia
-            </div>
-            <div>
-                and I am a
-            </div>
-            <div class="purple">
-                Frontend Developer
-            </div>
-            <div>
-                skilled in
-            </div>
-            <div>
-                <span id="element" class="purple fs-1 fw-bold">
-                </span>
-            </div>
-        </div>
-        <div class="right my-4 ml-4 ">
-            <img src="code1.png" alt="backgroud image" class="img-fluid imgSize">
-        </div>
-    </section>
-    <br>
-   <div class="btns">
-    <button type="submit" class="btn button" (click)="callForAction($event)">Call for Action</button>
-    <button type="submit" class="btn button" (click)="downloadResume($event)">Download Resume</button>
-   </div>
+<!-- <div class="back"> -->
+<section class="firstSection">
+  <div class="content-wrapper">
+    <div class="left my-4 ml-4 head">
+      <p class="welcome">WELCOME TO MY WORLD !!</p>
+      <div>
+        Hello folks! I am
+      </div>
+      <div class="purple">
+        Ayush Bhatia
+      </div>
+      <div>
+        and I am a
+      </div>
+      <div class="purple">
+        Frontend Developer
+      </div>
+      <div>
+        skilled in
+      </div>
+      <div class="mb-4">
+        <span id="element" class="purple fw-bold elements">
+        </span>
+      </div>
+    </div>
+    <div class="right containerImg">
+      <img src="myProfilePic.jpg" alt="backgroud image" class="max-w-full h-auto img-fluid ml-0 imgSize">
+    </div>
+  </div>
+</section>
+<br>
+<div class="button-wrapper">
+  <button type="submit" class="btn btn-lg button " (click)="callForAction($event)">Call for Action</button>
+    <button type="submit" class="btn btn-lg button" (click)="downloadResume($event)">Download Resume</button>
+</div>
 
 
-    <!-- <section class="secondSection">
+<!-- <section class="secondSection">
         This is second section
 
     </section> -->
 
 
-     <!-- ========================================
+<!-- ========================================
           Our Service Section Start
     ========================================  -->
-    <section class="section-services section section--hidden">
-        <div class="container">
-          <h2 class="common-heading">Services Offered</h2>
-          <span class="services-offered">
-          As a dynamic Frontend Developer with extensive experience in Angular 16 and TypeScript, I specialize in creating responsive and visually appealing web applications. My services include:
-          </span>
-        </div>
 
-        <div class="container grid grid-three-col">
-          <div class="service-box">
-            <img src="integration.png" alt="Web Design" width="35" class="serive-icon" name="desktop-outline">
-            <h3 class="subHead mt-2">API Integration</h3>
-            <p>
-              “Integrated RESTful APIs and microservices to ensure
-              real-time data updates and improved functionality
-              of web applications.”
-            </p>
-          </div>
+<section class="section-services section section--hidden">
+  <div class="container">
+    <h2 class="common-heading">Services Offered</h2>
+    <span class="services-offered">
+      As a dynamic Frontend Developer with extensive experience in Angular 16 and TypeScript, I specialize in creating
+      responsive and visually appealing web applications. My services include:
+    </span>
+  </div>
 
-          <div class="service-box">
-            <img src="programming.png" alt="Web Development" width="35" name="logo-react" class="serive-icon">
-            <h3 class="subHead mt-2">Web Development</h3>
-            <p>
-              “Specialized in Angular 16 and TypeScript,
-              enhancing user experiences through responsive and
-              visually appealing web interfaces.”
-            </p>
-          </div>
+  <div class="container grid grid-three-col">
+    <div class="service-box">
+      <img src="integration.png" alt="Web Design" width="35" class="serive-icon" name="desktop-outline">
+      <h3 class="subHead mt-2 mb-2">API Integration</h3>
+      <p>
+        “Integrated RESTful APIs and microservices to ensure
+        real-time data updates and improved functionality
+        of web applications.”
+      </p>
+    </div>
 
-          <div class="service-box">
-            <img src="web-analytics.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
-            <h3 class="subHead mt-2">Data Visualization</h3>
-            <p>
-              “Developed dynamic charts using Highcharts,
-              Chart.js, D3.js, and ngx-charts to effectively
-              visualize complex datasets.”
-            </p>
-          </div>
+    <div class="service-box">
+      <img src="programming.png" alt="Web Development" width="35" name="logo-react" class="serive-icon">
+      <h3 class="subHead mt-2 mb-2">Web Development</h3>
+      <p>
+        “Specialized in Angular 16 and TypeScript,
+        enhancing user experiences through responsive and
+        visually appealing web interfaces.”
+      </p>
+    </div>
 
-          <div class="service-box">
-            <img src="scrum.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
-            <h3 class="subHead mt-2">Agile Methodology</h3>
-            <p>
-              “Leveraged Agile methodologies to drive project
-              success and ensure optimal functionality and
-              performance.”
-            </p>
-          </div>
-          <div class="service-box">
-            <img src="skill.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
-            <h3 class="subHead mt-2">Technical Skills</h3>
-            <p>
-              “Proficient in HTML5, CSS3, JavaScript, Bootstrap,
-              Tailwind CSS, Git Version Control System,
-              NPM, and JSON.”
-            </p>
-          </div>
-          <div class="service-box">
-            <img src="collaborate.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
-            <h3 class="subHead mt-2">Collaboration</h3>
-            <p>
-              “Collaborated with cross-functional teams,
-              increasing project success rates by 15%.”
-            </p>
-          </div>
-        </div>
-    </section>
+    <div class="service-box">
+      <img src="web-analytics.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
+      <h3 class="subHead mt-2 mb-2">Data Visualization</h3>
+      <p>
+        “Developed dynamic charts using Highcharts,
+        Chart.js, D3.js, and ngx-charts to effectively
+        visualize complex datasets.”
+      </p>
+    </div>
+
+    <div class="service-box">
+      <img src="scrum.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
+      <h3 class="subHead mt-2 mb-2">Agile Methodology</h3>
+      <p>
+        “Leveraged Agile methodologies to drive project
+        success and ensure optimal functionality and
+        performance.”
+      </p>
+    </div>
+    <div class="service-box">
+      <img src="skill.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
+      <h3 class="subHead mt-2 mb-2">Technical Skills</h3>
+      <p>
+        “Proficient in HTML5, CSS3, JavaScript, Bootstrap,
+        Tailwind CSS, Git Version Control System,
+        NPM, and JSON.”
+      </p>
+    </div>
+    <div class="service-box">
+      <img src="collaborate.png" alt="Web Desgn" width="35" class="serive-icon" name="desktop-outline">
+      <h3 class="subHead mt-2 mb-2">Collaboration</h3>
+      <p>
+        “Collaborated with cross-functional teams,
+        increasing project success rates by 15%.”
+      </p>
+    </div>
+  </div>
+</section>
 
 
-       <!-- ========================================
+<!-- ========================================
           work completed counter section Start
     ========================================  -->
 
-    <section class="section-work-data section">
-        <div class="container gridNumb grid-four-col numberHeading">
-          <div>
-            <h2 data-number="3" class="counter-numbers">5+</h2>
-            <p>Projects Completed</p>
-          </div>
-          <div>
-            <h2 data-number="3" class="counter-numbers">20+</h2>
-            <p>Happy Clients</p>
-          </div>
-          <div>
-            <h2 data-number="5000" class="counter-numbers">4500+</h2>
-            <p>Cups of Coffee</p>
-          </div>
-          <div>
-            <h2 data-number="44" class="counter-numbers">44+</h2>
-            <p>Professional Experience (in months)</p>
-          </div>
-        </div>
-      </section>
-</div>
+<section class="section-work-data section">
+  <div class="container gridNumb grid-four-col numberHeading">
+    <div>
+      <h2 data-number="3" class="counter-numbers"><b>5+</b></h2>
+      <p>Projects Completed</p>
+    </div>
+    <div>
+      <h2 data-number="3" class="counter-numbers"><b>20+</b></h2>
+      <p>Happy Clients</p>
+    </div>
+    <div>
+      <h2 data-number="5000" class="counter-numbers"><b>4500+</b></h2>
+      <p>Cups of Coffee</p>
+    </div>
+    <div>
+      <h2 data-number="44" class="counter-numbers"><b>46+</b></h2>
+      <p>Professional Experience (in months)</p>
+    </div>
+  </div>
+</section>
+<!-- </div> -->

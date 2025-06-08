@@ -2,37 +2,27 @@
   <div class="container-fluid port">
     <a class="navbar-brand font" href="/homepage"><img class="logo" src="download.png" alt="logo" width="50"></a>
     <a class="navbar-brand font" href="/homepage">My Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button"(click)="toggleNavigation()" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse dis" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse dis" [hidden]="!isNavBarCollapsed" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active home" aria-current="page" href="/homepage">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active home" aria-current="page" href="/about">About</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link home" aria-current="page" href="#">Skills</a>
+          <a class="nav-link home" aria-current="page" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link home" aria-current="page" href="#">Education</a>
-        </li>
+          <a class="nav-link home" href="/homepage">Services</a>
+        </li> 
         <li class="nav-item">
-          <a class="nav-link home" aria-current="page" href="#">Resume</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link active home" href="/contact">Contact Me</a>
+          <a class="nav-link home" href="/contact">Contact Me</a>
         </li>
-       
       </ul>
-      <!-- <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
     </div>
   </div>
 </nav>
+
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <router-outlet></router-outlet>
