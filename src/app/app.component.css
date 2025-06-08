@@ -1,8 +1,17 @@
 .port {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row-reverse;
 }
+
+/* @media (max-width : 48rem) {
+  .port {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; 
+}
+  
+} */
 
 .logo {
   border-radius: 18px;
@@ -55,4 +64,28 @@ div > ul > li :hover {
 .dis {
   display: flex;
   justify-content: space-around;
+}
+
+@media (max-width: 540px) {
+  nav div {
+    background-color: rgb(125, 15, 228);
+    padding: 1rem;
+    /* height: 10vh; */
+  }
+}
+
+@media (max-width: 440px) {
+  .font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: #ffff;
+  }
+
+  .port {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
 }

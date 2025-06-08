@@ -43,7 +43,7 @@
                 <div class="col-md-6">
                     <form method="POST" [formGroup]="form" (ngSubmit)="onSubmit()" class="contact-form" [ngClass]="{'is-validated' : form.touched || form.dirty}">
                         <div class="form-group para">
-                            <label for="name">Name</label>
+                            <label for="name" class="form-label">Name</label>
                             <input type="text" id="name" formControlName="from_name" name="name" required
                                 class="form-control" [class.is-invalid]="formInteracted && this.form.controls['from_name'].invalid" (input)="onInputChange()">
                             <div *ngIf="formInteracted && this.form.controls['from_name'].invalid && this.form.controls['from_name'].touched"
@@ -69,7 +69,7 @@
                         <br>
 
                         <div class="form-group para">
-                            <label for="subject">Subject</label>
+                            <label for="subject" class="form-label">Subject</label>
                             <input type="text" id="subject" formControlName="subject" name="subject" required (input)="onInputChange()" class="form-control" 
                             [class.is-invalid]="formInteracted && this.form.controls['subject'].invalid">
                             <div *ngIf="formInteracted && this.form.controls['subject'].invalid"
@@ -79,7 +79,7 @@
                         </div>
                         <br>
                         <div class="form-group para">
-                            <label for="message">Message</label>
+                            <label for="message" class="form-label">Message</label>
                             <textarea id="message" formControlName="message" name="message" rows="5" required
                                 class="form-control" [class.is-invalid]="formInteracted && this.form.controls['message'].invalid" (input)="onInputChange()"></textarea>
                             <div class="invalid-feedback"
@@ -105,13 +105,13 @@
                         <div class="card-header my-contact">My Contact Information</div>
                         <div class="card-body details">
                             <h3 class="card-title">Email :</h3>
-                            <p class="card-text"><a href="/homepage">ayushh.bhatiaa&commat;gmail.com</a></p>
+                            <p class="card-text"><a href="mailTo">ayushh.bhatiaa&commat;gmail.com</a></p>
                             <br>
                             <h3 class="card-title">LinkedIn :</h3>
-                            <p class="card-text"><a href="/homepage">https://www.linkedin.com/in/ayushbhatia660</a></p>
+                            <p class="card-text"><a href="https://www.linkedin.com/in/ayushbhatia660">https://www.linkedin.com/in/ayushbhatia660</a></p>
                             <br>
                             <h3 class="card-title">Contact No :</h3>
-                            <p class="card-text"><a href="/homepage">+91-7985892062</a></p>
+                            <p class="card-text"><a href="Tel">+91-7985892062</a></p>
                             <!-- <h3 class="card-title">Git Lab :</h3>
                           <p class="card-text">ayushh.bhatiaa&commat;gmail.com</p> -->
                         </div>
