@@ -30,7 +30,9 @@ div h2 {
 }
 
 .button {
-  margin-bottom : 30px;
+  width: 19rem;
+  margin-top: 10px;
+  /* margin-bottom: 30px; */
   border-radius: 26px;
   background-color: rgb(125, 15, 228);
   color: #ffff;
@@ -46,9 +48,9 @@ div h2 {
 
 .info {
   border: 1px solid rgb(125, 15, 228);
-  max-width: 18rem;
-  margin-top: -75px;
-  margin-left: 220px;
+  /* max-width: 18rem; */
+  /* margin-top: -75px; */
+  /* margin-left: 220px; */
   display: table;
   font-family: "Poppins", sans-serif;
   font-size: medium;
@@ -58,6 +60,7 @@ div h2 {
 
 .details {
   background-color: rgb(186, 161, 209);
+  padding: 12px;
   /* color: #ffff; */
 }
 
@@ -66,6 +69,7 @@ div h2 {
   font-size: large;
   font-weight: 500;
   font-style: normal;
+  padding: 12px;
 }
 
 .phone {
@@ -79,7 +83,7 @@ div h2 {
 }
 
 .closing {
-  margin-bottom : 10px;
+  margin-bottom: 10px;
   border-radius: 26px;
   background-color: rgb(125, 15, 228);
   color: #ffff;
@@ -99,5 +103,69 @@ div h2 {
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
+}
 
+.contact-form {
+  width: 30rem;
+}
+
+.form-contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* text-align: center; */
+  padding: 2rem;
+  gap: 3rem;
+}
+
+@media (max-width: 980px) and (min-width: 767px) {
+  .contact-form {
+    width: 23rem;
+  }
+
+  .info {
+    max-width: 100%;
+    display: table;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .phone {
+    height: 35vh;
+  }
+
+  .contact-form {
+    width: 20rem;
+  }
+
+  .form-contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+    padding: 2rem;
+    gap: 3rem;
+  }
+
+  .info {
+    max-width: 100%;
+    display: table;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .my-contact {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    font-style: normal;
+    padding: 12px;
+  }
 }
