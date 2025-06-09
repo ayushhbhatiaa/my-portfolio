@@ -1,10 +1,10 @@
 <div>
     <img src="Cont.png" alt="contact us" class="phone">
     <br>
-    <div [hidden]="showAlert" class="alert alert-success contact mx-4 alert-dismissible fade show" role="alert">
-        <strong>Thank you for contacting ! &nbsp;</strong> Your response is submitted, we'll connect shortly.
+    <!-- <div [hidden]="showAlert" class="alert alert-success contact mx-4 alert-dismissible fade show" role="alert">
+        <strong>Thank you for contacting ! &nbsp;</strong> Your response is submitted..., we'll connect shortly.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
+    </div> -->
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -17,7 +17,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body para">
-                    Thank you for Contacting us ! We will get back to you shortly !
+                    Thank you for contacting us ! We will get back to you shortly !
                 </div>
                 <div class="modal-footer">
                     <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Understood</button> -->
@@ -26,7 +26,6 @@
             </div>
         </div>
     </div>
-
 
     <section id="contact" class="contact-section">
         <div class="container">
@@ -39,92 +38,104 @@
                 or just say hi, my inbox is always open.
             </p>
             <br>
-            <div class="row">
-                <div class="col-md-6">
-                    <form method="POST" [formGroup]="form" (ngSubmit)="onSubmit()" class="contact-form" [ngClass]="{'is-validated' : form.touched || form.dirty}">
-                        <div class="form-group para">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" formControlName="from_name" name="name" required
-                                class="form-control" [class.is-invalid]="formInteracted && this.form.controls['from_name'].invalid" (input)="onInputChange()">
-                            <div *ngIf="formInteracted && this.form.controls['from_name'].invalid && this.form.controls['from_name'].touched"
-                                class="invalid-feedback">
-                                Name is required
-                            </div>
+        </div>
+        <div class="form-contact-container">
+            <div class="row form-details">
+                <!-- <div class="col-md-6"> -->
+                <form method="POST" [formGroup]="form" (ngSubmit)="onSubmit()" class="contact-form"
+                    [ngClass]="{'is-validated' : form.touched || form.dirty}">
+                    <div class="form-group para">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" formControlName="from_name" name="name" required
+                            class="form-control"
+                            [class.is-invalid]="formInteracted && this.form.controls['from_name'].invalid"
+                            (input)="onInputChange()">
+                        <div *ngIf="formInteracted && this.form.controls['from_name'].invalid && this.form.controls['from_name'].touched"
+                            class="invalid-feedback">
+                            Name is required
                         </div>
-                        <br>
-                        <div class="form-group para">
-                            <!-- <label for="email">Email</label>
+                    </div>
+                    <br>
+                    <div class="form-group para">
+                        <!-- <label for="email">Email</label>
                             <input type="email" id="email" formControlName="from_email" name="email" required
                                 class="form-control"> -->
 
-                            <label for="email exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" id="email" formControlName="from_email" name="email" required
-                                class="form-control" [class.is-invalid]="formInteracted && this.form.controls['from_email'].invalid" id="exampleFormControlInput1"
-                                placeholder="name@example.com" (input)="onInputChange()">
-                            <div class="invalid-feedback"
-                                *ngIf="formInteracted && this.form.controls['from_email'].invalid">
-                                Please enter the correct email.
-                            </div>
+                        <label for="email exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" id="email" formControlName="from_email" name="email" required
+                            class="form-control"
+                            [class.is-invalid]="formInteracted && this.form.controls['from_email'].invalid"
+                            id="exampleFormControlInput1" placeholder="name@example.com" (input)="onInputChange()">
+                        <div class="invalid-feedback"
+                            *ngIf="formInteracted && this.form.controls['from_email'].invalid">
+                            Please enter the correct email.
                         </div>
-                        <br>
+                    </div>
+                    <br>
 
-                        <div class="form-group para">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" formControlName="subject" name="subject" required (input)="onInputChange()" class="form-control" 
+                    <div class="form-group para">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" formControlName="subject" name="subject" required
+                            (input)="onInputChange()" class="form-control"
                             [class.is-invalid]="formInteracted && this.form.controls['subject'].invalid">
-                            <div *ngIf="formInteracted && this.form.controls['subject'].invalid"
-                                class="invalid-feedback">
-                                Subject is required
-                            </div>
+                        <div *ngIf="formInteracted && this.form.controls['subject'].invalid" class="invalid-feedback">
+                            Subject is required
                         </div>
-                        <br>
-                        <div class="form-group para">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" formControlName="message" name="message" rows="5" required
-                                class="form-control" [class.is-invalid]="formInteracted && this.form.controls['message'].invalid" (input)="onInputChange()"></textarea>
-                            <div class="invalid-feedback"
-                                *ngIf="formInteracted && this.form.controls['message'].invalid">
-                                Please enter a message in the textarea.
-                            </div>
+                    </div>
+                    <br>
+                    <div class="form-group para">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" formControlName="message" name="message" rows="5" required
+                            class="form-control"
+                            [class.is-invalid]="formInteracted && this.form.controls['message'].invalid"
+                            (input)="onInputChange()"></textarea>
+                        <div class="invalid-feedback" *ngIf="formInteracted && this.form.controls['message'].invalid">
+                            Please enter a message in the textarea.
                         </div>
-                        <br>
-                        <button [disabled]="form.invalid" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                            type="submit" class="btn button">Send Message</button>
-                        <br>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <!-- <div class="contact-info">
+                    </div>
+                    <br>
+                    <button [disabled]="form.invalid" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        type="submit" class="btn button">Send Message</button>
+                    <br>
+                </form>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="col-md-6"> -->
+            <!-- <div class="contact-info">
                         <h3>Contact Information</h3>
                         <p>Email: <a href="mailto:your-email@example.com">your-email-example.com</a></p>
                         <p><a> LinkedIn: linkedin.com/in/your-profile</a></p>
                         <p><a> GitHub: github.com/your-username</a></p>
                     </div> -->
 
-                    <div class="card mb-3 info">
-                        <div class="card-header my-contact">My Contact Information</div>
-                        <div class="card-body details">
-                            <h3 class="card-title">Email :</h3>
-                            <p class="card-text"><a href="mailTo">ayushh.bhatiaa&commat;gmail.com</a></p>
-                            <br>
-                            <h3 class="card-title">LinkedIn :</h3>
-                            <p class="card-text"><a href="https://www.linkedin.com/in/ayushbhatia660">https://www.linkedin.com/in/ayushbhatia660</a></p>
-                            <br>
-                            <h3 class="card-title">Contact No :</h3>
-                            <p class="card-text"><a href="Tel">+91-7985892062</a></p>
-                            <!-- <h3 class="card-title">Git Lab :</h3>
+            <!-- <div class="card mb-3 info"> -->
+            <div class="info">
+                <div class="card-header my-contact">My Contact Information</div>
+                <div class="card-body details">
+                    <h3 class="card-title">Email :</h3>
+                    <p class="card-text"><a href="mailto:ayushh.bhatiaa@gmail.com">ayushh.bhatiaa&commat;gmail.com</a></p>
+                    <br>
+                    <h3 class="card-title">LinkedIn :</h3>
+                    <p class="card-text"><a
+                            href="https://www.linkedin.com/in/ayushbhatia660">https://www.linkedin.com/in/ayushbhatia660</a>
+                    </p>
+                    <br>
+                    <h3 class="card-title">Contact No :</h3>
+                    <p class="card-text"><a href="tel:7985892062">+91-7985892062</a></p>
+                    <!-- <h3 class="card-title">Git Lab :</h3>
                           <p class="card-text">ayushh.bhatiaa&commat;gmail.com</p> -->
-                        </div>
-                    </div>
-
-                    <!-- Optional Google Maps Embed -->
-                    <!-- <div class="map">
-                        <iframe src="your-google-maps-embed-link" width="100%" height="250" frameborder="0"
-                            style="border:0;" allowfullscreen=""></iframe>
-                    </div> -->
                 </div>
             </div>
         </div>
+
+        <!-- Optional Google Maps Embed -->
+        <!-- <div class="map">
+                        <iframe src="your-google-maps-embed-link" width="100%" height="250" frameborder="0"
+                            style="border:0;" allowfullscreen=""></iframe>
+                    </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
     </section>
 </div>
 <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
